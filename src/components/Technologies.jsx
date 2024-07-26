@@ -21,7 +21,7 @@ const iconVariant = (duration) => ({
 });
 const Technologies = () => {
   return (
-    <div className=" pb-24">
+    <div className="pb-10 md:pb-24 lg:pb-24">
       <motion.h1
         initial={{
           backgroundImage: "linear-gradient(to right, #ECD4F5, #580A74)",
@@ -37,7 +37,7 @@ const Technologies = () => {
             ease: "easeInOut",
           },
         }}
-        className="my-20 text-center text-4xl"
+        className="my-4 md:my-20 lg:my-20 text-center text-4xl"
       >
         Technologies
       </motion.h1>

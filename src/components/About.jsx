@@ -1,5 +1,5 @@
 import React from "react";
-import aboutimg from "../assets/aboutme.jpg";
+import aboutimg from "../assets/abt.gif";
 import {
   ABOUT_TEXT1,
   ABOUT_TEXT2,
@@ -32,11 +32,11 @@ const About = () => {
       </motion.h1>
 
       <div className="flex flex-wrap">
-        <div className="w-full lg:w-1/2 lg:p-8">
+        <div className="w-full lg:w-1/2 lg:p-8 m-5 md:m-0 lg:m-0">
           <motion.div
-            whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: -100 }}
-            transition={{ duration: 0.5 }}
+            // whileInView={{ opacity: 1, x: 0 }}
+            // initial={{ opacity: 0, x: -100 }}
+            // transition={{ duration: 0.5 }}
             className="flex items-center justify-center"
           >
             <img className="rounded-2xl" src={aboutimg} alt="aboutimg" />

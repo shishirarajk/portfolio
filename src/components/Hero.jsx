@@ -17,7 +17,7 @@ const Hero = () => {
   const text = HERO_CONTENT;
   const hoverRange = 2;
   return (
-    <div className=" pb-4 lg:mb-35">
+    <div className="pb-4 lg:mb-35">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
@@ -25,7 +25,7 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-purple-500 text-4xl font-light tracking-tighter lg:text-8xl"
+              className="pb-3 md:pb-16 lg:pb-16 text-purple-500 text-4xl font-light tracking-tighter lg:text-8xl"
             >
               Shishira Raj K
             </motion.h1>
@@ -34,7 +34,7 @@ const Hero = () => {
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
-              className="bg-gradient-to-r from-pink-300 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent"
+              className="text-center mb:text-left lg:text-left bg-gradient-to-r from-pink-300 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent"
             >
               Frontend Developer
             </motion.span>
@@ -64,14 +64,14 @@ const Hero = () => {
                     onMouseEnter={() => setHoverIndex(index)}
                     onMouseLeave={() => setHoverIndex(null)}
                     animate={{
-                     // color: isHovered ? "#CD5C5C" : "#a855f7",
+                      // color: isHovered ? "#CD5C5C" : "#a855f7",
                       fontWeight: isHovered ? "600" : "400",
                       transition: {
-                        duration:0,
+                        duration: 0,
                         ease: "easeInOut",
                       },
                     }}
-                    style={{ cursor:"pointer" }}
+                    style={{ cursor: "pointer" }}
                   >
                     {char}
                   </motion.span>
